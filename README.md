@@ -23,4 +23,4 @@ Executar em ambiente de desenvolvimento:
 $ npm run serve
 ```
 ## Autor 
-* ** José Yuri Lima Lira ** - [yurilimace](https://github.com/yurilimace)
+*  José Yuri Lima Lira  - [yurilimace](https://github.com/yurilimace)
