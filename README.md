@@ -3,10 +3,10 @@ Projeto desenvolvido para a participação do processo seletivo da empresa Ponto
 
 ## Depêndencias Utilizadas
 No desenvolvimento da solução foram usadas as seguintes depêndencias
-+[VueJs](https://vuejs.org/)
-+[Axios](https://github.com/axios/axios)
-+[MomentJS](https://momentjs.com/docs/)
-+[Bootstrap](https://getbootstrap.com/)
+- [VueJs](https://vuejs.org/)
+- [Axios](https://github.com/axios/axios)
+- [MomentJS](https://momentjs.com/docs/)
+- [Bootstrap](https://getbootstrap.com/)
 
 ## Como utilizar
 
