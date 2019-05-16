@@ -7,10 +7,11 @@ No desenvolvimento da solução foram usadas as seguintes depêndencias
 - [Axios](https://github.com/axios/axios)
 - [MomentJS](https://momentjs.com/docs/)
 - [Bootstrap](https://getbootstrap.com/)
+- [Font-Awsome](https://fontawesome.com/)
 
 ## Como utilizar
 
-necessário baixar as dependências do projeto através do comando:
+Necessário baixar as dependências do projeto através do comando:
 
 ```bash
 $ npm install
@@ -21,4 +22,5 @@ Executar em ambiente de desenvolvimento:
 ```bash
 $ npm run serve
 ```
-
+## Autor 
+* ** José Yuri Lima Lira ** - [yurilimace](https://github.com/yurilimace)
