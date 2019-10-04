@@ -1,9 +1,7 @@
 <template>
   <div class="col-xl-6 offset-3 container margin">
-    <div>
+    <div class="title">
       <h2>Espelho de Ponto</h2>
-      <br />
-      <br />
     </div>
     <div>
       <input colspan="6" v-model="search" placeholder="Digite um nome" />
@@ -103,6 +101,7 @@
 <script>
 import axios from "axios";
 import moment from "moment";
+
 moment.locale("pt-br");
 export default {
   name: "home",
@@ -252,7 +251,9 @@ body {
   font-size: 14px;
   color: #444;
 }
-
+.title{
+  margin-bottom: 2em;
+}
 table {
   background-color: #fff;
 }
@@ -268,7 +269,7 @@ td {
   margin-bottom: 10px;
 }
 
-.btn:hover{
+.btn:hover {
   cursor: pointer;
 }
 </style>
