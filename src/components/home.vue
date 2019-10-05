@@ -1,9 +1,7 @@
 <template>
   <div class="col-xl-6 offset-3 container margin">
-    <div>
+    <div class="title">
       <h2>Espelho de Ponto</h2>
-      <br />
-      <br />
     </div>
     <div>
       <input colspan="6" v-model="search" placeholder="Digite um nome" />
@@ -64,7 +62,7 @@
                 :key="titulo.id"
               >
                 {{titulo}}
-                <button class="btn btn-success" disabled v-if="index == 1">
+                <button class="btn btn-success" disabled v-if="index === 1">
                   <span aria-hidden="true" v-if="button" @click="Asc">
                     <font-awesome-icon icon="arrow-down" />
                   </span>
@@ -72,7 +70,7 @@
                     <font-awesome-icon icon="arrow-up" />
                   </span>
                 </button>
-                <button class="btn btn-success" disabled v-if="index == 0">
+                <button class="btn btn-success" disabled v-if="index === 0">
                   <span aria-hidden="true" v-if="daybutton" @click="AscDia">
                     <font-awesome-icon icon="arrow-down" />
                   </span>
@@ -103,6 +101,7 @@
 <script>
 import axios from "axios";
 import moment from "moment";
+
 moment.locale("pt-br");
 export default {
   name: "home",
@@ -206,6 +205,7 @@ export default {
     Dsc() {
       this.button = true;
       this.emp.sort((a, b) => {
+
         if (a.emp.name > b.emp.name) {
           return -1;
         }
@@ -218,6 +218,7 @@ export default {
 
     AscDia() {
       this.emp.sort((a, b) => {
+
         if (a.dia > b.dia) {
           return 1;
         }
@@ -253,6 +254,10 @@ body {
   color: #444;
 }
 
+.title{
+  margin-bottom: 2em;
+}
+
 table {
   background-color: #fff;
 }
@@ -266,5 +271,8 @@ td {
 .margin {
   margin-right: 700px;
   margin-bottom: 10px;
+}
+.btn:hover {
+  cursor: pointer;
 }
 </style>
