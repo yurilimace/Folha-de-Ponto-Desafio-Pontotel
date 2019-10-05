@@ -190,7 +190,7 @@ export default {
     },
 
     Asc() {
-      this.emp.sort(function(a, b) {
+      this.emp.sort((a, b) => {
         if (a.emp.name > b.emp.name) {
           return 1;
         }
@@ -204,7 +204,8 @@ export default {
 
     Dsc() {
       this.button = true;
-      this.emp.sort(function(a, b) {
+      this.emp.sort((a, b) => {
+
         if (a.emp.name > b.emp.name) {
           return -1;
         }
@@ -216,7 +217,8 @@ export default {
     },
 
     AscDia() {
-      this.emp.sort(function(a, b) {
+      this.emp.sort((a, b) => {
+
         if (a.dia > b.dia) {
           return 1;
         }
@@ -230,7 +232,7 @@ export default {
 
     DscDia() {
       this.daybutton = true;
-      this.emp.sort(function(a, b) {
+      this.emp.sort((a, b) => {
         if (a.dia > b.dia) {
           return -1;
         }
@@ -251,9 +253,11 @@ body {
   font-size: 14px;
   color: #444;
 }
+
 .title{
   margin-bottom: 2em;
 }
+
 table {
   background-color: #fff;
 }
@@ -268,7 +272,6 @@ td {
   margin-right: 700px;
   margin-bottom: 10px;
 }
-
 .btn:hover {
   cursor: pointer;
 }
