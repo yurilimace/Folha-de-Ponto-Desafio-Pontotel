@@ -2,6 +2,7 @@
   <div class="col-xl-6 offset-3 container margin">
     <div class="title">
       <h2>Espelho de Ponto</h2>
+
     </div>
     <div>
       <input colspan="6" v-model="search" placeholder="Digite um nome" />
@@ -62,6 +63,7 @@
                 :key="titulo.id"
               >
                 {{titulo}}
+
                 <button class="btn btn-success" disabled v-if="index === 1">
                   <span aria-hidden="true" v-if="button" @click="Asc">
                     <font-awesome-icon icon="arrow-down" />
@@ -70,6 +72,7 @@
                     <font-awesome-icon icon="arrow-up" />
                   </span>
                 </button>
+
                 <button class="btn btn-success" disabled v-if="index === 0">
                   <span aria-hidden="true" v-if="daybutton" @click="AscDia">
                     <font-awesome-icon icon="arrow-down" />
@@ -190,7 +193,9 @@ export default {
     },
 
     Asc() {
-      this.emp.sort(function(a, b) {
+
+      this.emp.sort((a, b) => {
+
         if (a.emp.name > b.emp.name) {
           return 1;
         }
@@ -204,7 +209,9 @@ export default {
 
     Dsc() {
       this.button = true;
-      this.emp.sort(function(a, b) {
+
+      this.emp.sort((a, b) => {
+
         if (a.emp.name > b.emp.name) {
           return -1;
         }
@@ -216,7 +223,8 @@ export default {
     },
 
     AscDia() {
-      this.emp.sort(function(a, b) {
+      this.emp.sort((a, b) => {
+
         if (a.dia > b.dia) {
           return 1;
         }
@@ -230,7 +238,9 @@ export default {
 
     DscDia() {
       this.daybutton = true;
-      this.emp.sort(function(a, b) {
+
+      this.emp.sort((a, b) => {
+
         if (a.dia > b.dia) {
           return -1;
         }
@@ -251,9 +261,7 @@ body {
   font-size: 14px;
   color: #444;
 }
-.title{
-  margin-bottom: 2em;
-}
+
 table {
   background-color: #fff;
 }
@@ -267,9 +275,5 @@ td {
 .margin {
   margin-right: 700px;
   margin-bottom: 10px;
-}
-
-.btn:hover {
-  cursor: pointer;
 }
 </style>
